@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Navbar() {
     return (
             <nav className="navbar sm:navbar-expand bg-1 fg-2 sticky-top">
@@ -18,15 +20,14 @@ export default function Navbar() {
                         <div className="drawer-body ms-auto">
                             <ul className="navbar-nav">
                                 <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                    <Link className="nav-link active" aria-current="page" to={`/`}>Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">Projects</a>
+                                    <Link className="nav-link" to={`/projects`}>Projects</Link>
                                 </li>
                                 <li>
-                                    <button>Log In</button>
+                                    <button className="cta-btn"><Link className=" nav-link" to={`/dashboard`} style={{color:"white"}}>Log In</Link></button>
                                 </li>
-                               
                             </ul>
                         </div>
                     </dialog>
