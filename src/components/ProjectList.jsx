@@ -6,6 +6,7 @@ import { ProjectContext } from "../contexts/ProjectContext";
 export default function ProjectList(){
 
     const projects = useContext(ProjectContext)
+    
     return (
         <section className="project-list">
             {

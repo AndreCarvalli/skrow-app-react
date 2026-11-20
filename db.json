@@ -83,7 +83,7 @@
       ]
     },
     {
-      "id": "SKR-001",
+      "id": "SKR-002",
       "title": "ABSA Remittance App",
       "clientId": "ABSA BANK KENYA",
       "currency": "KES",
@@ -163,6 +163,7 @@
           ]
         }
       ]
-    }
-  ] 
+    } 
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
