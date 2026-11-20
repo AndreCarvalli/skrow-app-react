@@ -4,18 +4,18 @@ export default function ProjectCard({project}){
     return (
         <section className="card">
             <section className="card-header">
-                <h3>Project: {project.title}</h3>
+                <h3>{project.title}</h3>
                 <p>Client: {project.clientId}</p>
                 <p>
-                    Project Amount: {project.currency}
+                    Budget: {project.currency}
                     {" "}{project.totalAmount}
                 </p>
-                <p>Status: {project.status}</p>
+                <p style={{color:"green"}}>Status: {project.status}</p>
             </section>
 
-            <section className="card-milestones">
+            <section className ="card-milestones">
                 {
-                    project.milestones.map(milestone =>(
+                    project.milestones.map(milestone => (
                         <Milestone
                             key={milestone.id}
                             milestone={milestone}
@@ -23,8 +23,8 @@ export default function ProjectCard({project}){
                         />
                     ))
                 }
-
             </section>  
+        
         </section>
     )
 }

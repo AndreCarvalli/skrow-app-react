@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import ProjectCard from "./ProjectCard";
+import { ProjectContext } from "../contexts/ProjectContext";
 
 
-export default function ProjectList({projects}){
+export default function ProjectList(){
 
+    const projects = useContext(ProjectContext)
     return (
         <section className="project-list">
             {
@@ -13,7 +16,7 @@ export default function ProjectList({projects}){
                     />
                 }   
             )
-            }
+        }
         </section>
     )
 }

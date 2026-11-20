@@ -22,11 +22,11 @@ export default function Navbar() {
                                 <li className="nav-item">
                                     <Link className="nav-link active" aria-current="page" to={`/`}>Home</Link>
                                 </li>
-                                <li className="nav-item">
-                                    <Link className="nav-link" to={`/projects`}>Projects</Link>
-                                </li>
                                 <li>
-                                    <button className="cta-btn"><Link className=" nav-link" to={`/dashboard`} style={{color:"white"}}>Log In</Link></button>
+                                    <Link className=" nav-link" to={`/dashboard`} >Dashboard</Link>
+                                </li>
+                                <li className="nav-item">
+                                    <button className="cta-btn"><Link className="nav-link" to={`/Login`} style={{color:"white"}}>Login</Link></button>
                                 </li>
                             </ul>
                         </div>

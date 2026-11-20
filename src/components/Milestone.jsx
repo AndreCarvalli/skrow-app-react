@@ -1,9 +1,7 @@
 export default function Milestone({milestone, currency}){
     return (
         <div
-            className="milestone-item"
-            // data-milestone-id={milestone.id}
-        >
+            className="milestone-item">
 
             <h5 className="milestone-name">
                 {milestone.title}
@@ -36,7 +34,9 @@ export default function Milestone({milestone, currency}){
                 </tbody>
 
             </table>
-
+                <button>
+                    Add task
+                </button>
         </div>
     )
 }
